@@ -89,21 +89,21 @@
 	<div class="data-container1">
 		<div class="data-item">
 			<h2>溫度</h2>
-			<p class="value" id="temperature">22 &#8451;</p>
+			<p class="value" id="Temperature">22 &#8451;</p>
 		</div>
 		<div class="data-item">
 			<h2>濕度</h2>
-			<p class="value" id="humidity">10%</p>
+			<p class="value" id="Humidity">10%</p>
 		</div>
 	</div>
 	<div class="data-container2">
 		<div class="data-item">
 			<h2>風速</h2>
-			<p class="value" id="windspeed">10m/s</p>
+			<p class="value" id="speed">10 m/s</p>
 		</div>
 		<div class="data-item">
 			<h2>風向</h2>
-			<p class="value" id="direction">25 	&#176;</p>
+			<p class="value" id="direct">25 &#176;</p>
 		</div>
 	</div>
 	
@@ -161,12 +161,12 @@
 
 	  dataRef1.on('value', function(getdata1){
 	  	var humi = getdata3.val();
-	  	document.getElementById('windspeed').innerHTML = humi + "m/s";
+	  	document.getElementById('windspeed').innerHTML = speed + "m/s";
 	  })
 
 	  dataRef1.on('value', function(getdata1){
 	  	var humi = getdata4.val();
-	  	document.getElementById('direction').innerHTML = humi + "&#176;";
+	  	document.getElementById('direction').innerHTML = direct + "&#176;";
 	  })
 
 
