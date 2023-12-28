@@ -151,21 +151,21 @@
 	  //fetch the data
 	  dataRef1.on('value', function(getdata1){
 	  	var humi = getdata1.val();
-	  	document.getElementById('Humid').innerHTML = humid + "%";
+	  	document.getElementById('Humid').innerHTML = Humid + "%";
 	  })
 
 	   dataRef2.on('value', function(getdata2){
 	  	var temp = getdata2.val();
-	  	document.getElementById('Temp').innerHTML = temp + "&#8451;";
+	  	document.getElementById('Temp').innerHTML = Temp + "&#8451;";
 	  })
 
 	  dataRef3.on('value', function(getdata3){
 	  	var direct = getdata3.val();
-	  	document.getElementById('direct').innerHTML = Direct + "&#176;";
+	  	document.getElementById('direct').innerHTML = direct + "&#176;";
 	  })
 	  dataRef4.on('value', function(getdata4){
 	  	var speed = getdata4.val();
-	  	document.getElementById('speed').innerHTML = Speed + " m/s";
+	  	document.getElementById('speed').innerHTML = speed + " m/s";
 	  })
 
 
