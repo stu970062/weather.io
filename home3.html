@@ -11,12 +11,22 @@
 			margin: 0;
 			padding: 0;
 		}
-		.data-container{
+		.data-container1{
 			display: flex;
 			justify-content: space-between;
 			width: 50%;
 			margin: 50px auto;
-			padding: 20px;
+			padding: 30px;
+			background-color: #1909f9;
+			box-shadow: 0 2px 20px rgba(249, 249, 249, 0.1);
+			border-radius: 10px;
+		}
+		.data-container2{
+			display: flex;
+			justify-content: space-between;
+			width: 50%;
+			margin: 50px auto;
+			padding: 30px;
 			background-color: #1909f9;
 			box-shadow: 0 2px 20px rgba(249, 249, 249, 0.1);
 			border-radius: 10px;
@@ -76,7 +86,7 @@
 
 	<div class="data-head">微型氣象站</div>
 
-	<div class="data-container">
+	<div class="data-container1">
 		<div class="data-item">
 			<h2>溫度</h2>
 			<p class="value" id="temperature">22 &#8451;</p>
@@ -85,6 +95,8 @@
 			<h2>濕度</h2>
 			<p class="value" id="humidity">10%</p>
 		</div>
+	</div>
+	<div class="data-container2">
 		<div class="data-item">
 			<h2>風速</h2>
 			<p class="value" id="windspeed">10m/s</p>
@@ -93,9 +105,9 @@
 			<h2>風向</h2>
 			<p class="value" id="direction">25 	&#176;</p>
 		</div>
-
-		
 	</div>
+	
+
 	<div class="data-bottom">更新頻率:2分鐘</div>
 
 	<!-- the scripts for products you want to access must be added-->
