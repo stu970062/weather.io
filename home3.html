@@ -144,10 +144,10 @@
 	  var database = firebase.database();
 
 	  //getting reference to the data we want
-	  var dataRef1 = database.ref('Weather/Humid');
-	  var dataRef2 = database.ref('Weather/Temp');
-	  var dataRef3 = database.ref('Weather/direct');
-	  var dataRef4 = database.ref('Weather/speed');
+	  var dataRef1 = database.ref('Humid');
+	  var dataRef2 = database.ref('Temp');
+	  var dataRef3 = database.ref('direct');
+	  var dataRef4 = database.ref('speed');
 	  //fetch the data
 	  dataRef1.on('value', function(getdata1){
 	  	var humi = getdata1.val();
