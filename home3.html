@@ -151,12 +151,12 @@
 	  //fetch the data
 	  dataRef1.on('value', function(getdata1){
 	  	var humi = getdata1.val();
-	  	document.getElementById('Humid').innerHTML = humi + "%";
+	  	document.getElementById('Humid').innerHTML = Humid + "%";
 	  })
 
 	   dataRef2.on('value', function(getdata2){
 	  	var temp = getdata2.val();
-	  	document.getElementById('Temp').innerHTML = temp + "&#8451;";
+	  	document.getElementById('Temp').innerHTML = Temp + "&#8451;";
 	  })
 
 	  dataRef3.on('value', function(getdata3){
