@@ -146,8 +146,8 @@
 	  //getting reference to the data we want
 	  var dataRef1 = database.ref('Weather/Humid');
 	  var dataRef2 = database.ref('Weather/Temp');
-	  var dataRef3 = database.ref('Weather/windspeed');
-	  var dataRef4 = database.ref('Weather/direction');
+	  var dataRef3 = database.ref('Weather/speed');
+	  var dataRef4 = database.ref('Weather/direct');
 	  //fetch the data
 	  dataRef1.on('value', function(getdata1){
 	  	var humi = getdata1.val();
@@ -159,13 +159,13 @@
 	  	document.getElementById('temperature').innerHTML = temp + "&#8451;";
 	  })
 
-	  dataRef1.on('value', function(getdata1){
-	  	var humi = getdata3.val();
+	  dataRef1.on('value', function(getdata3){
+	  	var speed = getdata3.val();
 	  	document.getElementById('windspeed').innerHTML = speed + "m/s";
 	  })
 
-	  dataRef1.on('value', function(getdata1){
-	  	var humi = getdata4.val();
+	  dataRef1.on('value', function(getdata4){
+	  	var direct = getdata4.val();
 	  	document.getElementById('direction').innerHTML = direct + "&#176;";
 	  })
 
